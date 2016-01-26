@@ -397,6 +397,7 @@ nav.scroll-nav{
   width: 300px;
   position: relative;
   top: 0px;
+  left: 0px;
  
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
@@ -409,7 +410,8 @@ nav.scroll-nav{
   height: 400px;
   width: 600px;
   position: relative;
-  top: -50px;
+  top: -100px;
+  left: -150px;
 }
 
 

@@ -1,0 +1,77 @@
+#blog-page
+  .container.blog-page
+    .nav.col-xs-10.col-xs-offset-1
+      %ul.nav.nav-pills.pull-right
+        %li
+          = link_to "Home", root_path
+        %li
+          %a{:href => "login.php"} Log In
+      %h3.text-muted Project Journals
+    .blog-buttons.col-xs-10.col-xs-offset-1
+      .btn-group.btn-group-center{"aria-label" => "", :role => "group"}
+        %button.btn.btn-default{:onclick => "window.location='techie.html';", :type => "button"} Techie
+        %button.btn.btn-default{:onclick => "window.location='photography.html';", :type => "button"} Photography
+        %button.btn.btn-default.active{:onclick => "window.location='food.html';", :type => "button"} Food
+    .header.col-xs-10.col-xs-offset-1
+      %h2.title A way of life
+      %p.lead If I'm taking the time to write about it, it's worth trying (or at least looking at the pictures)
+      %hr
+    #content.col-xs-8.col-xs-offset-1
+      %article#food-post3.post
+        .post-panel
+          .media.loaded
+            =image_tag("JacksonBurger.jpg")
+          .copy
+            %h4
+              %span.text-muted August 2015:
+              San Francisco
+            %h5.text-muted This city contends with NYC for #1...
+            %p
+              So I came out to San Francisco to start building up my network
+            %br
+              %p
+                Back on the East Coast, a burger as described above is just about the minimum requirement.  A small, local diner chain called Jackson-Hole has a location situated in Englewood, New Jersey, which is where I found myself on this memorable day. Despite the recommendation I was given, I was quite skeptical of this supposed burger supremeness.
+              %br
+                %p
+                  I ordered the burger standard as I do for the litmus test, like pizza, just cheese. Last second I decided to throw in the bacon, asked it to be cooked medium rare. I ended up the heavenly work-of-art you see above. The bacon was high-quality, likely maple-cured, perfectly cooked, and full of flavor. As you can see they didn’t skimp on it either. The beef was certainly from a premium cut as it was dense with that juicy, beefy flavor one dreams of when they’re craving a burger. The beef was the perfect ratio of fat to lean, I’m guessing 80/20. As you can see, it was also huge. Must have been well over ½ pound. Definitely a top recommendation if you’re craving a burger.
+                  %a{:href => "http://jacksonholeburgers.com/", :target => "_blank"} Jackson Hole
+                  also has several other locations in NYC.
+        .post-shadow
+      %article#food-post2.post
+        .post-panel
+          .media.loaded
+            =image_tag("smores.jpg")
+          .copy
+            %h4
+              %span.text-muted> 19-June-2015:
+              S'mores Bread Pudding...What!
+            %h5.text-muted Wow..
+            %p
+              The best s'mores dish I've ever had. Period.
+              It wasn’t overwhelmingly marshmallowy. Nor was it too soft. Consistency, flavors, warmth, it was all perfect. I really can’t describe it that well, you just need to try it.
+            %br
+              %p
+                Georgio’s of Gramercy was loaded with several other phenomenal dishes. After eating several appetizers, 3 entrees between two of us, drinks, and two desserts, the bill still somehow came out to less than $100. Wow.
+        .post-shadow
+      %article#food-post1.post
+        .post-panel
+          .media.loaded
+            =image_tag("JacksonBurger.jpg")
+          .copy
+            %h4
+              %span.text-muted 18-May-2015:
+              Phenom Burger
+            %h5.text-muted This burger is heavenly
+            %p
+              I’m pretty particular about burgers. Especially since I lived in San Diego for so many years, and despite my love for that place, I will say with conviction that a real burger is almost non-existant there. In a society where In-n-Out burger is respected as the best burger around, the old-school style burger boasting an inch thickness or more, with a juicy, pink center is something people don’t even know about! It might be obvious that I’m more than jaded from many failed search expeditions for a good burger whilst living in So-Cal.
+            %br
+              %p
+                Back on the East Coast, a burger as described above is just about the minimum requirement.  A small, local diner chain called Jackson-Hole has a location situated in Englewood, New Jersey, which is where I found myself on this memorable day. Despite the recommendation I was given, I was quite skeptical of this supposed burger supremeness.
+              %br
+                %p
+                  I ordered the burger standard as I do for the litmus test, like pizza, just cheese. Last second I decided to throw in the bacon, asked it to be cooked medium rare. I ended up the heavenly work-of-art you see above. The bacon was high-quality, likely maple-cured, perfectly cooked, and full of flavor. As you can see they didn’t skimp on it either. The beef was certainly from a premium cut as it was dense with that juicy, beefy flavor one dreams of when they’re craving a burger. The beef was the perfect ratio of fat to lean, I’m guessing 80/20. As you can see, it was also huge. Must have been well over ½ pound. Definitely a top recommendation if you’re craving a burger.
+                  %a{:href => "http://jacksonholeburgers.com/", :target => "_blank"} Jackson Hole
+                  also has several other locations in NYC.
+        .post-shadow
+    / ===== SIDE BAR ====== / 
+    = render 'blog/sidebar'

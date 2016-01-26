@@ -1,0 +1,27 @@
+#sidebar.col-xs-3.col-sm-2.col-sm-offset-1
+  #blog-info.side-box
+    .img-div
+      =image_tag("MattWorking1.jpg")
+    .description
+      %p
+      %p{:align => "left"}
+        %strong Matt Lashinsky
+        %br
+          %br
+            Welcome to the blog where I humiliate myself. This blog is essentially a how-to manual on destroying electronics and breaking nice things in the process of building them. Continue to check back from time to time to hear about my latest blunders and occasional breakthroughs.
+            %br
+              %br
+                Connect with me on social media if you want to stay in touch.
+                %br
+                  %br
+                    %a{:href => "https://plus.google.com/u/0/117868198943421001531/"} Google +
+                    %br
+                      %a{:href => "https://www.facebook.com/matt.lashinsky"} Facebook
+                      %br
+                        %a{:href => "https://twitter.com/MattALashinsky"} Twitter
+                        %br
+  #search
+    %form#search-form{:action => "/search", :method => "get"}
+      %span.left
+      %input{:name => "q", :type => "text", :value => "Search"}
+        %span.right

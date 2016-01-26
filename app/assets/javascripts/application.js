@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require blog
 //= require bootstrap.min
 //= require bootstrap-sprockets
 //= require wow.min

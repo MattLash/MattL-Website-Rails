@@ -1,0 +1,75 @@
+#blog-page
+  .container.blog-page
+    .nav.col-xs-10.col-xs-offset-1
+      %ul.nav.nav-pills.pull-right
+        %li=link_to 'Home', root_path
+        %li
+          %a{:href => "login.php"} Log In
+      %h3.text-muted Project Journals
+    .blog-buttons.col-xs-10.col-xs-offset-1
+      .btn-group.btn-group-center{"aria-label" => "", :role => "group"}
+        %button.btn.btn-default{:onclick => "window.location='techie.html';", :type => "button"} Techie
+        %button.btn.btn-default.active{:onclick => "window.location='photography.html';", :type => "button"} Photography
+        %button.btn.btn-default{:onclick => "window.location='food.html';", :type => "button"} Food
+    .header.col-xs-10.col-xs-offset-1
+      %h2.title An Exciting Hobby
+      %p.lead Photograhy has always fascinated me. So, I'm learning how to take photos. Not just work a camera fundamentally, but I'm trying to learn how to create stunning photos.
+      %hr
+    #content.col-xs-8.col-xs-offset-1
+      / ===========  ARTICLES ALL GO HERE! ============
+      %article#post3.post.type-photoset
+        .post-panel
+          .media.loaded
+            = link_to image_tag("MarinaBay.jpg"), image_path("MarinaBay.jpg"), :target => "_blank"
+          .copy
+            %h4
+              %span.text-muted> 31-JULY-2014:
+              Singapore
+            %h5.text-muted A boat on a building.
+            %p
+              When I first planned to go to Singapore, I had no clue what was in store for me. Thinking back, I can’t really remember the compelling reason to arrange part of my trip there. From what I remember, it merely was one of those places I was told I should visit while in Southeast Asia. However, when I first crested the bridge over the Marina bay to see the horizon slowly reveal the bright and expansive view of downtown, I felt an instant connection to the city. Once I had finally parked my bags at my hotel for the night and got out to the streets by foot, within 15 minutes of walking the Marina area I was telling myself I’d want to live here some day.
+            %br
+              %p
+                Immaculate streets, all-glass high rises, the flawless metro-system, and endless shopping kept me perpetually impressed the entire 5 days I was there. Being a big foodie, it was a dreamy place to be as the restaurants never end. The food markets, like the well known Maxwell, were loaded with tiny, single owner gems who were almost always unaware of the culinary anomalies they produced on a day-to-day basis.
+              %br
+                %p
+                  Alas, the photo above shows a panoramic view of the Marina Bay from the promenade. Although you might get a sense of the grandiose stature of this great city from the photo, it doesn’t nearly do the place justice. As with anything, being there is the only way to truly experience it. That said, when are you going? You do know that it is one of the safest cities in the world...
+        .post-shadow
+      %article#post2.post.type-photoset
+        .post-panel{:style => "opacity:1;"}
+          .media.loaded
+            %img#photoPost2img.blogImage{:src => ""}
+              #photoPost2Previous.previous
+                %span.glyphicon.glyphicon-chevron-left
+              #photoPost2Next.next
+                %span.glyphicon.glyphicon-chevron-right
+          .copy
+            %h4
+              %span.text-muted> 16-May-2015:
+              Canoeing trip
+            %h5.text-muted Never trust a friend when he says there are no alligators in a Central Florida creek.
+            %p
+              A friend who I consider to be one of the most responsible of my friends, who’s finishing up his MD at Cornell, whom I trust when it comes to safety, convinced me that canoeing through a very rural, rainforest-like, small river in central Florida w0uld be a good idea. Let’s go canoeing he said. There will be no alligators he said. pfft.
+            %br
+              %p
+                Despite our encounter with our potential undertaker, the trip down
+                %a{:href => "https://en.wikipedia.org/wiki/Wekiva_River", :target => "_blank"} Wekiwa River
+                was quite enjoyable. We managed to make it a few miles east of the springs. Along the way we passed an extremely busy cove filled with people clutching light beer cans and floating on rafts, a scene that screamed southern culture to anyone who’s not used to social gatherings ‘on tha crik’.
+        .post-shadow
+      %article#post1.post
+        .post-panel
+          .media.loaded
+            = link_to image_tag("streakingLights.jpg"), image_path("streakingLights.jpg"), :target => "_blank"
+           
+          .copy
+            %h4
+              %span.text-muted 2-May-2014:
+              Streaking Lights
+            %h5.text-muted This is harder than I thought
+            %p
+              I must have passed it on my way out over a dozen times and made mental plans to pay it a visit one day. Something about the city lights in the backdrop and the speeding cars banking the turn seemed to really speak to me. I imagined the headlights creating a perfectly curved and connected line at the base of the modern and well lit downtown buildings.
+            %br
+              %p
+                Once I set up I immediately realized that a chain-link fence stood between me and capturing those professional shots I had dreamed up. Guess I should foreseen this since this prime shooting location was on a bridge. Womp.
+        .post-shadow
+    = render 'blog/sidebar'

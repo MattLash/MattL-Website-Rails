@@ -1,11 +1,12 @@
+// Place all the styles related to the blog controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*==================================================================*/
 /* ========================: BLOG PAGES :===========================*/
-
-.blog-page .jumbotron{
-  background-color: #fff;
-  margin-top: 20px;
+#blog-page{
+    background: rgb(230, 235, 234);
 }
 .blog-page .title{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -28,7 +29,7 @@
   width: 100%;
 }
 #marina-bay img:hover{
-  width:;
+  width:100%;
 }
 #sidebar{
   float:left;
@@ -52,7 +53,7 @@
   float: none;
   position: relative;
   width: 100%;
-  max-width: 170px
+  max-width: 170px;
   box-shadow: 0px 0px 5px 1px #f8f8f2;
 }
 #sidebar .img-div{
@@ -129,9 +130,9 @@
 }
 .backToTop span{
     left: 20px;
-    top:20px;*/
-    -ms-transform: rotate(180deg) scale(2,2); /* IE 9 */
-    -webkit-transform: rotate(180deg) scale(2,2); /* Chrome, Safari, Opera */
+    top: 20px;
+    -ms-transform: rotate(180deg) scale(2,2); 
+    -webkit-transform: rotate(180deg) scale(2,2); 
     transform: rotate(180deg) scale(2,2);
     color: #fff;
 }

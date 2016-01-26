@@ -30,6 +30,7 @@ gem 'bootstrap-sass'
 #HAML
 gem 'haml'
 gem 'font-awesome-sass'
+gem "jquery-slick-rails"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
