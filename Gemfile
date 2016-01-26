@@ -29,6 +29,7 @@ gem 'backstretch-rails', '~> 2.0', '>= 2.0.4'
 gem 'bootstrap-sass'
 #HAML
 gem 'haml'
+gem 'font-awesome-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

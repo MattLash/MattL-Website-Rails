@@ -28,13 +28,10 @@
               Blog
               %span.caret
             %ul.dropdown-menu
-              %hr
-                %li
-                  %a{:href => "blog/techie.html"} Techie
-                %li
-                  %a{:href => "blog/photography.html"} Photography
-                %li
-                  %a{:href => "blog/food.html"} Food
+              %hr 
+              %li= link_to "Techie", root_path
+              %li= link_to "Photography", root_path 
+              %li= link_to "Food", root_path
           %li.contactLink
             %a{:href => "#contact"} Contact
 
@@ -215,7 +212,7 @@
             
             .resume-btn
               %a{"data-parent" => "#experience", "data-toggle" => "collapse", :href => "#experience1"}
-                %span.glyphicon.glyphicon-menu-down{"aria-hidden" => "false"}
+                %i.fa.fa-chevron-down{"aria-hidden" => "true"}
           .resume-panel.wow.fadeInRight
             .panel-heading
               .panel-title
@@ -234,7 +231,7 @@
       
             .resume-btn
               %a.collapsed{"data-parent" => "#experience", "data-toggle" => "collapse", :href => "#experience2"}
-                %span.glyphicon.glyphicon-menu-right{"aria-hidden" => "true"}
+                %i.fa.fa-chevron-right{"aria-hidden" => "true"}
           .resume-panel.wow.fadeInRight
             .panel-heading
               .panel-title
@@ -253,7 +250,7 @@
            
             .resume-btn
               %a.collapsed{"data-parent" => "#experience", "data-toggle" => "collapse", :href => "#experience3"}
-                %span.glyphicon.glyphicon-menu-right{"aria-hidden" => "true"}
+                %i.fa.fa-chevron-right{"aria-hidden" => "true"}
           .resume-panel.wow.fadeInRight
             .panel-heading
               .panel-title
@@ -272,7 +269,7 @@
             
             .resume-btn
               %a.collapsed{"data-parent" => "#experience", "data-toggle" => "collapse", :href => "#experience4"}
-                %span.glyphicon.glyphicon-menu-right{"aria-hidden" => "true"}
+                %i.fa.fa-chevron-right{"aria-hidden" => "true"}
           .resume-panel.wow.fadeInRight
             .panel-heading
               .panel-title
@@ -291,7 +288,7 @@
            
             .resume-btn
               %a.collapsed{"data-parent" => "#experience", "data-toggle" => "collapse", :href => "#experience5"}
-                %span.glyphicon.glyphicon-menu-right{"aria-hidden" => "true"}
+                %i.fa.fa-chevron-right{"aria-hidden" => "true"}
           .resume-panel.wow.fadeInRight
             .panel-heading
               .panel-title
@@ -318,7 +315,7 @@
           
           .resume-btn
             %a.collapsed{"data-parent" => "#experience", "data-toggle" => "collapse", :href => "#education1"}
-              %span.glyphicon.glyphicon-menu-right{"aria-hidden" => "true"}
+              %i.fa.fa-chevron-right{"aria-hidden" => "true"}
           .resume-panel
             .panel-heading
               .panel-title
@@ -338,7 +335,7 @@
           
           .resume-btn
             %a.collapsed{"data-parent" => "#experience", "data-toggle" => "collapse", :href => "#education2"}
-              %span.glyphicon.glyphicon-menu-right{"aria-hidden" => "true"}
+              %i.fa.fa-chevron-right 
           .resume-panel
             .panel-heading
               .panel-title
@@ -366,26 +363,29 @@
             %span.text-muted Drone, Computer Build, Baking Cakes.
           %p.lead All things technical interest me. I want to know how they work, how to build them, and how to make them better. This journal keeps tabs on my frustrations, discoveries, and highlights while working on things like a quadcopter drone and building a computer.
         .col-md-5
-          = link_to image_tag('quad1.jpg', class: "featurette-image img-responsive", alt: "Quadcopter Drone Matt Lashinsky"), root_path 
+          .image-pane.sidepan
+            = link_to image_tag('quad1.jpg', class: "featurette-image img-responsive", alt: "Quadcopter Drone Matt Lashinsky"), root_path 
       %hr.featurette-divider
         .row.featurette
           .col-md-5
-            = link_to image_tag('photography1.png', class: "featurette-image img-responsive", alt: "Matt Lashinsky Photography Buildings New York City"), root_path 
+            .image-pane.grow
+              = link_to image_tag('photography1.png', class: "featurette-image", alt: "Matt Lashinsky Photography Buildings New York City"), root_path 
           .col-md-7
             %h2.featurette-heading
               Photography.
               %span.text-muted I like snapping photos.
             %p.lead Have always been fascinated by way photographers can capture a completely unique perspective of a landscape, object, or person beyond what the average person can see with their own eyes. I aspire to eventually develop real photography skills. Check out a few of my best photos.
-        %hr.featurette-divider
-          .row.featurette
-            .col-md-7
-              %h2.featurette-heading
-                Foodie.
-                %span.text-muted I like food.
-              %p.lead Strange thing is that I was a picky eater as a kid. Now I like just about everything. When I come across something real nice I take photos and write about why it was so fantastical. Check my food blog if you want to know of a few good spots.
-            .col-md-5
-              = link_to image_tag('pizza.jpg', class: "featurette-image img-responsive", alt: "Matt Lashinsky Foodie - Italian Pizza"), root_path 
-              
+      %hr.featurette-divider
+        .row.featurette
+          .col-md-7
+            %h2.featurette-heading
+              Foodie.
+              %span.text-muted I like food.
+            %p.lead Strange thing is that I was a picky eater as a kid. Now I like just about everything. When I come across something real nice I take photos and write about why it was so fantastical. Check my food blog if you want to know of a few good spots.
+          .col-md-5
+            .image-pane
+              = link_to image_tag('pizza.jpg', class: "featurette-image img-responsive bw", alt: "Matt Lashinsky Foodie - Italian Pizza"), root_path 
+  
 / ============================================================
 / ============ SECTION 7: CONTACT =============================
 %section#contact
@@ -404,24 +404,24 @@
               %br
                 %a{:href => "tel:646-844-4426"} (646) 844-4426
                 %br
-                  %a{:href => "mailto:matt@matthewlashinsky.com"} matt@matthewlashinsky.com
+                %a{:href => "mailto:matt@matthewlashinsky.com"} matt@matthewlashinsky.com
        
       %div#photoSlot
       .col-xs-4
         .contact-image
-          %img{:src => "blog/images/MattWorking1.jpg"}
+          = image_tag("MattWorking1.jpg")
       
     .contact-social-media
       %ul#social
         %a{:href => "https://www.facebook.com/matt.lashinsky", :target => "_blank"}
           %li.facebook
-            <img src="assets/images/"icon_facebook.png">
+            =image_tag("icon_facebook.png")
         %a{:href => "https://www.linkedin.com/in/mattalashinsky", :target => "_blank"}
           %li.linkedIn
-            %img{:src => "assets/images/icon_linkedin.png"}
+            =image_tag("icon_linkedin.png")
         %a{:href => "https://twitter.com/MattALashinsky", :target => "_blank"}
           %li.twitter
-            %img{:src => "assets/images/icon_twitter.png"}
-        %a{:href => "https://instagram.com/matteofresco/", :target => "_blank"}
+            =image_tag("icon_twitter.png")
+        %a{:href => "https://github.com/MattLash", :target => "_blank"}
           %li.instagram
-            %img{:src => "assets/images/icon_instagram.png"}
+            =image_tag("icon_github.png")

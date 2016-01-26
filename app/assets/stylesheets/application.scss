@@ -13,9 +13,10 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap.min";
 @import "animate";
 @import "custom";
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 @import url(https://fonts.googleapis.com/css?family=Cinzel);
 @import url(https://fonts.googleapis.com/css?family=Lora);
+@import "font-awesome-sprockets";
+@import "font-awesome";
