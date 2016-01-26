@@ -38,11 +38,13 @@
       %article#post2.post.type-photoset
         .post-panel{:style => "opacity:1;"}
           .media.loaded
-            %img#photoPost2img.blogImage{:src => ""}
-              #photoPost2Previous.previous
-                %span.glyphicon.glyphicon-chevron-left
-              #photoPost2Next.next
-                %span.glyphicon.glyphicon-chevron-right
+            #slick-div
+              %div
+                =image_tag("turtles.jpg")
+              %div  
+                =image_tag("alligator.jpg")
+              %div  
+                =image_tag("canoe.jpg")
           .copy
             %h4
               %span.text-muted> 16-May-2015:

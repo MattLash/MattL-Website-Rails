@@ -16,6 +16,7 @@
 //= require bootstrap-sprockets
 //= require wow.min
 //= require jquery.backstretch
+//= require jquery.slick
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
