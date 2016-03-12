@@ -1,41 +1,64 @@
 #blog-page
   .container.blog-page
-    .nav.col-xs-10.col-xs-offset-1
-      %ul.nav.nav-pills.pull-right
-        %li
-          = link_to "Home", root_path
-        %li
-          %a{:href => "login.php"} Log In
-      %h3.text-muted Project Journals
-    .blog-buttons.col-xs-10.col-xs-offset-1
-      .btn-group.btn-group-center{"aria-label" => "", :role => "group"}
-        %button.btn.btn-default{:onclick => "window.location='techie.html';", :type => "button"} Techie
-        %button.btn.btn-default{:onclick => "window.location='photography.html';", :type => "button"} Photography
-        %button.btn.btn-default.active{:onclick => "window.location='food.html';", :type => "button"} Food
+    = render 'blog/navbar_blog'
     .header.col-xs-10.col-xs-offset-1
       %h2.title A way of life
-      %p.lead If I'm taking the time to write about it, it's worth trying (or at least looking at the pictures)
+      %p.lead 
+        You need food to sustain. You need 
+        %em.lead good 
+        food to live.
       %hr
     #content.col-xs-8.col-xs-offset-1
       %article#food-post3.post
         .post-panel
           .media.loaded
-            =image_tag("JacksonBurger.jpg")
+            =image_tag("sf_tikka.jpg")
           .copy
             %h4
               %span.text-muted August 2015:
               San Francisco
             %h5.text-muted This city contends with NYC for #1...
             %p
-              So I came out to San Francisco to start building up my network
+              I came out to San Francisco to meet some startup folks. Since I want
+              to break into the tech scene in this town, I figured I should maybe 
+              try networking. Good thing my brother lives here and works in tech, 
+              hopefully his network can help with the struggle. However, before 
+              I start shaking hands and pounding down doors of any hardware startups
+              I can get an intro to, I need to get into the SF vibe. And the best way 
+              to do that is to get the chow on.
             %br
-              %p
-                Back on the East Coast, a burger as described above is just about the minimum requirement.  A small, local diner chain called Jackson-Hole has a location situated in Englewood, New Jersey, which is where I found myself on this memorable day. Despite the recommendation I was given, I was quite skeptical of this supposed burger supremeness.
-              %br
-                %p
-                  I ordered the burger standard as I do for the litmus test, like pizza, just cheese. Last second I decided to throw in the bacon, asked it to be cooked medium rare. I ended up the heavenly work-of-art you see above. The bacon was high-quality, likely maple-cured, perfectly cooked, and full of flavor. As you can see they didn’t skimp on it either. The beef was certainly from a premium cut as it was dense with that juicy, beefy flavor one dreams of when they’re craving a burger. The beef was the perfect ratio of fat to lean, I’m guessing 80/20. As you can see, it was also huge. Must have been well over ½ pound. Definitely a top recommendation if you’re craving a burger.
-                  %a{:href => "http://jacksonholeburgers.com/", :target => "_blank"} Jackson Hole
-                  also has several other locations in NYC.
+            %p
+              Anyone that knows me can tell you that one of my favorite kinds of 
+              food is indian food. I love that curry. And they also know that I'll
+              annoyingly tell you that what you probably think is "curry" is not 
+              actually curry. Most non-indians think that curry is a particular spice.
+              It is not. It is a term synonomous with gravy. A dish that has some 
+              kind of main protein, whether it be meat or vegetables, but sits in a 
+              saucy like bath of flavors; this is curry. A curry dish can take on 
+              a whole host of flavors, not necessarily the same flavor or scent that many
+              Americans have in mind when they hear the word "curry".
+            %br
+            %p
+              The photo above depicts one of the best curries I've had to date. 
+              It's a real popular dish amongst American consumers of Indian food,
+              Chicken Tikka Masala. And please don't call it "marsala", this is 
+              not Italian food. Although I'm a fan of a good chicken Marsala, and this
+              dish is equally popular in it's respective cultural domain, it is quite 
+              different and bears no resemblance in look or taste of it's Italian 
+              faux counter-part. Although, by the same designation, chicken Marsala 
+              be considered a curry, since it's a saucy like dish. 
+            %br
+              The dish here is a blend of tomatoes, cream, and coal-fired, marinated, 
+              boneless chicken. The flavor is incredibly complex and each spice 
+              shows up in every bite. The notes of cuman, coriander, fenugreek, 
+              cardamom, and black pepper blend so perfectly together to create a 
+              harmony of such a wide range of flavors. The tomato base gives the 
+              the flavor range a solid depth, while the cream adds to 
+              smoothness and front end flavors of the dish. If you're interested
+              in checking it out, it's a small hole in the wall Pakistani place 
+              in the Tenderloin called
+              %a{:href => "http://www.yelp.com/biz/lahore-karahi-san-francisco-2", :target => "_blank"} 
+                Lahore Karahi.
         .post-shadow
       %article#food-post2.post
         .post-panel
