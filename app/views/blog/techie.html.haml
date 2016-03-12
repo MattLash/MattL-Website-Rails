@@ -1,0 +1,107 @@
+#blog-page 
+  .container.blog-page
+    = render 'blog/navbar_blog'
+    .header.col-xs-10.col-xs-offset-1
+      %h2.title Let's talk tech
+      %p.lead I'm building a quadcopter drone, a beastly custom computer, and playing with a Raspberry Pi.
+      %hr
+    .row
+      #content.col-xs-8.col-xs-offset-1
+        %article#post4.post
+          .post-panel
+            .media.loaded
+              = link_to image_tag('mattFlyingDrone.jpg'), image_path('mattFlyingDrone.jpg'), target: "_blank"
+            .copy
+              %h4
+                %span.text-muted> 30-JULY-2015:
+                Taking Flight.
+              %h5.text-muted Feels like flying!
+              %p
+                Set up of the Naze32 wasn’t too hard. I was a bit nervous that I 
+                might have overheated the board while soldering the headers in or 
+                fused two traces together, but luckily we didn’t see smoke on startup. 
+                Using Baseflight on Chrome was pretty straightforward. Although 
+                I was a bit surprised that there is no official documentation with 
+                this software. However, we found a set up guide online, click here 
+                if you need it:
+                %a{:href => "http://quadquestions.com/wp-content/uploads/2014/11/acro_naze32_guide_5th_ed.pdf", :target => "_blank"} 
+                Naze32 setup Guide by Dlearnt.
+              %p
+                Here I am in this photo getting ballsy with the drone as I accelerate 
+                it at me then whip it back forward last second. You can likely 
+                tell from my expression that I’m a bit nervous, as I’m a complete 
+                newb with this. Regardless, I’m just glad to be flying it.
+          .post-shadow
+        %article#post3.post
+          .post-panel
+            .media.loaded
+              %a{:href => "images/Naze32.jpg", :target => "_blank"}
+                %img{:alt => "Naze32 flight controller", :src => "images/Naze32.jpg"}
+            .copy
+              %h4
+                %span.text-muted> 22-JULY-2015:
+                Drone - New Controller!
+              %h5.text-muted This should do the trick!
+              %p After messing around with the standard, non-customizable controllers, I've decided I might as well just jump in the deep end with a real controller. The weapon of choice, Naze32.
+              %br
+                %p
+                  This puppy comes with a solder-yourself connections, leaving you the flexibility of choosing which headers you want to use, as well as enough room to screw things up if you don't solder it properly.
+          .post-shadow
+        %article#post2.post
+          .post-panel
+            .media.loaded
+              %a{:href => "images/friedController.jpg", :target => "_blank"}
+                %img{:alt => "KK2.1 flight controller", :src => "images/friedController.jpg"}
+            .copy
+              %h4
+                %span.text-muted 9-JULY-2015:
+                Cooking It!
+              %h5.text-muted We've seem to become masters of frying electronics.
+              %p 
+                This is hard. Or maybe we are hard-headed. We seem to consistently 
+                toast new electronics as they arrive in their fresh HobbyKing packaging. 
+                It seemed as though we had it figured out. The suspects, electronic speed 
+                controllers and the flight controller. We've gone through several iterations 
+                of failures.
+              %p
+                For now we've decided to order both new ESCs and a new flight controller. 
+                Good thing these parts are relatively inexpensive, although the cost 
+                is starting to add up. Had we been working on a NASA project, we'd 
+                probably already burned through a couple million.
+          .post-shadow
+        %article#post1.post
+          .post-panel
+            .media.loaded
+              %a{:href => "images/quadteam.jpg", :target => "_blank"}
+                %img{:alt => "quadcopter team Dave Hughes (left) Brian Carr (right)", :src => "images/quadteam.jpg"}/
+            .copy
+              %h4
+                %span.text-muted> 11-JUNE-2015:
+                The Team
+              %h5.text-muted
+                Let's
+                %strike make
+                break stuff!
+              %p
+                I started this quadcopter project a little over a year ago at this point. 
+                After a few weeks of complete confusion, followed by some understanding, 
+                and ultimately sourcing parts by best guess, the quadcopter parts arrived. 
+                I immediately enlisted my super technically inclined roommate, Rick, 
+                to help me put it all together. We were somewhat surprised to find that 
+                all of the components came with zero assembly instructions or documentation. 
+                To put one of these together you have to rely on your own knowledge 
+                of electronics (zero for me) or the few scattered forum discussions 
+                and YouTube videos.
+              %p
+                Within a few hours we got it all together. When we went to fly it, it 
+                was incredibly unstable. Since we were both maddingly busy with work, 
+                we never got the chance to take it back out to figure out the issues. 
+                Thus, it sat in my room until a few months later I decided to make my 
+                move to DC.
+              %p
+                Arrive Upstate, I assemble a new drone crew. Meet the team: Brian and 
+                Dave! Two friends from highschool that are still in the area. Probably 
+                the most technically inclined of my high school friends as they are a 
+                computer engineer and architect.
+          .post-shadow
+      = render 'blog/sidebar'

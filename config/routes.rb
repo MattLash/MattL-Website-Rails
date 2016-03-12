@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   
   get '/blog/food' => 'blog#food', as: 'food'
   get '/blog/photography' => 'blog#photography', as: 'photography'
-  get '/blog/techie'=> 'blog#photography', as: 'techie'
+  get '/blog/techie'=> 'blog#techie', as: 'techie'
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
