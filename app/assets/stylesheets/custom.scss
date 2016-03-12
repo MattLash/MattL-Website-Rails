@@ -1,5 +1,6 @@
 /*==================================================================*/
 /* ==========================: GENERAL CSS :=============================*/
+
 .wrapper{
 	margin-top: -20px;
 }
@@ -13,6 +14,7 @@
   display: block;
   content: '';
 }
+
 .content {
   position: absolute;
   top: 0; bottom: 0; right: 0; left: 0;  /* follow the parent's edges */
@@ -144,10 +146,11 @@ nav.scroll-nav{
 	margin: 0 auto; 
 	position: relative; 
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
-	padding: 200px 0px 200px 0px;
-	color:#fff;
+	padding: 200px 0px;
+	color: #fff;
 	font-family: 'Cinzel', serif;
 	height: 800px;
+	text-align: center;
 }
 #cover .container{
 	padding-top: 10px;
@@ -176,6 +179,7 @@ nav.scroll-nav{
 	background-color: #fff;
 	color: #494949;
 	text-shadow: none;
+	text-align: center;
 }	
 #about .btn{
 	background-color: #FF6E3B;
@@ -203,6 +207,27 @@ nav.scroll-nav{
 /*==================================================================*/
 /* ==========================: SKILLS :=============================*/
 
+#skills{
+	color: #fff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #333333;
+	text-align: center;
+	
+	hr{
+		color:#494949;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 100px;
+		margin-top: 50px;
+		opacity: .5;
+	}
+}
+.section-header{
+	margin-bottom: 20px;
+}
+
 .gauge{
 	display: inline-block;
 	width: 185px;
@@ -213,25 +238,6 @@ nav.scroll-nav{
 	font-size: 12px;
 	color: #fff;
 }
-
-#skills{
-	color: #fff;
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-.section-header{
-	margin-bottom: 20px;
-}
-#skills hr{
-	color:#494949;
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 100px;
-	margin-top: 50px;
-	opacity: .5;
-}
-
 .bar{
 	display: block;
     position: relative;
@@ -297,6 +303,7 @@ nav.scroll-nav{
 	padding: 100px 0;
 	color: #fff;
 	text-shadow: none;
+	text-align: center;
 }	
 
 .resume-item{
@@ -356,68 +363,74 @@ nav.scroll-nav{
 /* ========================: BLOG SECTION :===========================*/
 
 #blog{
+	
 	background: image-url("blackPattern.jpg") fixed;
 	height: auto;
 	margin: auto;
 	color: #fff;
 	text-shadow: none;
-}
-#blog .featurette-divider{
-	margin-right: auto;
-	margin-left: auto;
-	width: 80%;
-}
-#blog .image-pane{
-	border: #fff solid 1px;
-	height:	200px;
-	width: 300px;
-	overflow: hidden;
-	overflow-x: hidden;
-}
-#blog .image-pane img {
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-}
-.sidepan img {		
-  margin-left: 0px;
-}
-.sidepan img:hover {
-  margin-left: -200px;
-}
-.bw:hover {
-  -webkit-filter: grayscale(100%);
-}
+	text-align: center;
 
-/*GROW*/
-.grow img {
-  height: 200px;
-  width: 300px;
-  position: relative;
-  top: 0px;
-  left: 0px;
- 
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-}
- 
-.grow img:hover {
-  height: 400px;
-  width: 600px;
-  position: relative;
-  top: -100px;
-  left: -150px;
-}
-
-
-.blog{
-	margin-top: 100px;
-	margin-bottom: 100px;
+	.featurette-divider{
+		margin-right: auto;
+		margin-left: auto;
+		width: 80%;
+	}
+	.image-pane{
+		border: #fff solid 1px;
+		height:	200px;
+		width: 300px;
+		overflow: hidden;
+		overflow-x: hidden;
+		background: #333;
+	}
+	.image-pane img {
+	  -webkit-transition: all 1s ease;
+	     -moz-transition: all 1s ease;
+	       -o-transition: all 1s ease;
+	      -ms-transition: all 1s ease;
+	          transition: all 1s ease;
+	}
+	.sidepan img {		
+	  margin-left: 0px;
+	}
+	.sidepan img:hover {
+	  margin-left: -200px;
+	}
+	
+	.bw {
+	  -webkit-filter: grayscale(100%);
+	}
+	.bw:hover{
+		-webkit-filter: grayscale(0%);
+	}
+	
+	/*GROW*/
+	.grow img {
+	  height: 200px;
+	  width: 300px;
+	  position: relative;
+	  top: 0px;
+	  left: 0px;
+	  -webkit-transition: all 1s ease;
+	     -moz-transition: all 1s ease;
+	       -o-transition: all 1s ease;
+	      -ms-transition: all 1s ease;
+	          transition: all 1s ease;
+	}
+	
+	.grow img:hover {
+	  height: 400px;
+	  width: 600px;
+	  position: relative;
+	  top: -100px;
+	  left: -150px;
+	}
+	
+	.blog{
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
 }
 
 /*=======================================================================*/
@@ -427,6 +440,7 @@ nav.scroll-nav{
 	height: auto;
 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 	font-family: 'Lora', serif;
+	text-align: center;
 }
 .contact-info h3{
 	color: #fff;
